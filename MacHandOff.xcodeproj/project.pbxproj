@@ -160,6 +160,7 @@
 				TargetAttributes = {
 					6281A2BA19CFAC9A008ABC17 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = ZDULT56L69;
 					};
 					6281A2CD19CFAC9A008ABC17 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -279,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -315,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -325,10 +326,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacHandOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = MacHandOff;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -336,10 +341,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacHandOff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = MacHandOff;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -358,7 +367,7 @@
 				);
 				INFOPLIST_FILE = MacHandOffTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MacHandOffTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacHandOff.app/Contents/MacOS/MacHandOff";
 			};
 			name = Debug;
@@ -374,7 +383,7 @@
 				);
 				INFOPLIST_FILE = MacHandOffTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MacHandOffTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacHandOff.app/Contents/MacOS/MacHandOff";
 			};
 			name = Release;
@@ -398,6 +407,7 @@
 				6281A2DA19CFAC9A008ABC17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6281A2DB19CFAC9A008ABC17 /* Build configuration list for PBXNativeTarget "MacHandOffTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +416,7 @@
 				6281A2DD19CFAC9A008ABC17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
